@@ -14,16 +14,17 @@ export function Hero() {
       <div className="relative max-w-4xl mx-auto text-center">
         <div className="relative">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground via-foreground/90 to-foreground/80 pb-2">
-            Design engineer
+            lorem ipsum
             <br />
-            and builder
+            dolor sit amet
           </h1>
           <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-1.5 bg-gradient-to-r from-transparent via-foreground/30 to-transparent rounded-full"></div>
         </div>
         <p className="text-lg md:text-xl text-foreground/70 mb-8 max-w-2xl mx-auto mt-12">
-          I&apos;m Aníbal, a software engineer. I design and build digital
-          products and experiences for the web. I specialize in front-end
-          development, user interface design, and interaction design.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          asperiores fuga ut quidem rerum fugit optio illum dicta esse veritatis
+          vel inventore officia, assumenda nostrum nisi voluptatem, laudantium
+          tenetur est!
         </p>
 
         <div className="flex items-center justify-center gap-4 relative">
@@ -32,7 +33,7 @@ export function Hero() {
           </Button>
           <Button
             variant="outline"
-            className="border-foreground/20 text-foreground hover:bg-foreground/10 px-8 py-6 text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-foreground/5 backdrop-blur-sm"
+            className="border-foreground/20 text-foreground hover:bg-foreground/10 px-8 py-6 text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-foreground/5 backdrop-blur-sm bg-gradient-to-r from-transparent via-foreground/10 to-transparent"
           >
             Learn More
           </Button>
