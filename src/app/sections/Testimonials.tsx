@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { Quote } from "lucide-react";
+import { Quote, Star } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface TestimonialProps {
   content: string;
@@ -46,8 +47,15 @@ function TestimonialCard({
   image,
 }: TestimonialProps) {
   return (
-    <div className="group relative">
-      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl bg-gradient-to-r from-teal-500/20 via-slate-500/20 to-teal-500/20 opacity-50 blur-xl transition-all duration-500 group-hover:opacity-100 dark:from-teal-200/20 dark:via-slate-200/20 dark:to-teal-200/20 sm:block"></div>
+    <motion.div
+      className="group relative"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      whileHover={{ scale: 1.02 }}
+    >
+      <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl bg-gradient-to-r from-cyan-500/20 via-slate-500/20 to-cyan-500/20 opacity-50 blur-xl transition-all duration-500 group-hover:opacity-100 dark:from-cyan-200/20 dark:via-slate-200/20 dark:to-cyan-200/20 sm:block"></div>
       <div className="relative z-10 flex flex-col h-full p-8 rounded-2xl bg-slate-50 dark:bg-slate-800 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-slate-200 dark:border-slate-700 hover:scale-[1.02]">
         <div className="flex items-center gap-4 mb-6">
           <div className="relative w-16 h-16 overflow-hidden rounded-full ring-2 ring-slate-100 dark:ring-slate-700">
@@ -73,15 +81,23 @@ function TestimonialCard({
           {content}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
 export function Testimonials() {
   return (
-    <section className="py-20">
+    <motion.section
+      className="py-20"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-cyan-100 dark:bg-cyan-800/30 mx-auto mb-4">
+            <Star className="w-6 h-6 text-cyan-600 dark:text-cyan-400" />
+          </div>
           <h2 className="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
             Success Stories
           </h2>
@@ -95,6 +111,6 @@ export function Testimonials() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
