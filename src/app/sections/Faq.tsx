@@ -122,11 +122,22 @@ export function FAQ() {
       </div>
       <div className="container relative z-10 mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <div className="inline-block mb-4">
-            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-purple-100 dark:bg-cyan-800/30 mx-auto mb-4">
+          <motion.div
+            className="inline-block mb-4"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <motion.div
+              className="flex items-center justify-center w-12 h-12 rounded-full bg-purple-100 dark:bg-cyan-800/30 mx-auto mb-4"
+              initial={{ rotate: -15 }}
+              animate={{ rotate: 0 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <Sparkles className="w-6 h-6 text-cyan-600 dark:text-cyan-400" />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
+
           <motion.h2
             className="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4"
             initial={{ opacity: 0, y: 20 }}
@@ -149,7 +160,6 @@ export function FAQ() {
           </motion.p>
         </div>
 
-        {/* Category Filter */}
         <motion.div
           className="flex flex-wrap justify-center gap-2 mb-12"
           initial={{ opacity: 0 }}
