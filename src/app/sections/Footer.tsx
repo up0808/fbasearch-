@@ -1,47 +1,125 @@
 "use client";
 
+import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { motion } from "framer-motion";
+import type { FC, SVGProps } from "react";
+
+interface SocialLinkProps {
+  name: string;
+  href: string;
+  icon: FC<SVGProps<SVGSVGElement>>;
+  lightColor: string;
+  darkColor: string;
+}
+
+const socialLinks: SocialLinkProps[] = [
+  {
+    name: "Email",
+    href: "mailto:anibal.alpizar14@gmail.com",
+    icon: Mail,
+    lightColor: "hover:text-red-600",
+    darkColor: "dark:hover:text-red-400",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/anibalalpizar",
+    icon: Linkedin,
+    lightColor: "hover:text-blue-600",
+    darkColor: "dark:hover:text-blue-400",
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/anibalalpizar",
+    icon: Github,
+    lightColor: "hover:text-gray-800",
+    darkColor: "dark:hover:text-gray-200",
+  },
+];
+
+const footerVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
 export function Footer() {
   return (
-    <footer className="bg-white dark:bg-gray-900 py-10">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center justify-between max-w-3xl mx-auto text-center">
-          <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-            Get in Touch
-          </h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">
-            Feel free to reach out if you have any questions or inquiries.
-          </p>
-          <div className="flex flex-col md:flex-row md:space-x-6 mb-6">
-            <a
-              href="mailto:anibal.alpizar14@gmail.com"
-              className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-            >
-              Email
-            </a>
-            <a
-              href="https://www.linkedin.com/in/anibalalpizar"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/anibalalpizar"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-            >
-              GitHub
-            </a>
-          </div>
-          <div className="border-t border-gray-300 dark:border-gray-700 pt-4">
-            <p className="text-gray-600 dark:text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} Your Name. All rights reserved.
-            </p>
-          </div>
-        </div>
+    <footer className="relative overflow-hidden">
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 opacity-20" />
       </div>
+      <motion.div
+        className="container relative z-10 mx-auto px-4 py-20"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={footerVariants}
+      >
+        <div className="max-w-4xl mx-auto">
+          <motion.div className="text-center mb-12" variants={itemVariants}>
+            <div className="inline-block mb-6"></div>
+            <h2 className="text-4xl font-bold mb-4 dark:text-white text-gray-900">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-cyan-600 dark:from-cyan-200 dark:to-cyan-600">
+                Get in Touch
+              </span>
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 text-lg">
+              Feel free to reach out if you have any questions or inquiries.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="flex flex-wrap justify-center gap-8 mb-12"
+            variants={itemVariants}
+          >
+            {socialLinks.map((link) => (
+              <motion.a
+                key={link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group flex items-center justify-center text-center gap-2 p-3 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300 ${link.lightColor} ${link.darkColor}`}
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <link.icon className="w-5 h-5" />
+                <span className="font-medium text-gray-800 text-center dark:text-gray-200">
+                  {link.name}
+                </span>
+                <ExternalLink className="w-4 h-4 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300" />
+              </motion.a>
+            ))}
+          </motion.div>
+
+          <motion.div className="text-center" variants={itemVariants}>
+            <div className="relative h-px mb-8">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-400 dark:via-gray-600 to-transparent animate-pulse" />
+            </div>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">
+              &copy; {new Date().getFullYear()}{" "}
+              <span className="font-medium text-gray-800 dark:text-gray-200">
+                Aníbal Alpízar
+              </span>
+              . For free use.
+            </p>
+          </motion.div>
+        </div>
+      </motion.div>
     </footer>
   );
 }
