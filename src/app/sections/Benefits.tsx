@@ -101,10 +101,10 @@ export function Benefits() {
             transition={{ duration: 0.5 }}
             className="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4"
           >
-            Lorem
+            Benefits
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-pink-600 dark:from-cyan-600 dark:to-cyan-700">
               {" "}
-              ipsum dolor
+              for you
             </span>
           </motion.h2>
           <motion.p
@@ -113,7 +113,8 @@ export function Benefits() {
             transition={{ duration: 0.5 }}
             className="text-xl text-slate-600 dark:text-slate-400"
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod, voluptate, quibusdam, aperiam dolorum
           </motion.p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
