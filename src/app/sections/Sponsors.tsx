@@ -4,9 +4,18 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
 import DarkLogo from "@/assets/vercel-icon-dark.svg";
 import LightLogo from "@/assets/vercel-icon-light.svg";
+
+interface Sponsor {
+  name: string;
+}
+
+const sponsors: Sponsor[] = [
+  { name: "Vercel" },
+  { name: "Vercel" },
+  { name: "Vercel" },
+];
 
 export function Sponsors() {
   const { theme } = useTheme();
@@ -15,8 +24,6 @@ export function Sponsors() {
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  const sponsors = [{ name: "Vercel" }, { name: "Vercel" }, { name: "Vercel" }];
 
   if (!mounted) return null;
 
