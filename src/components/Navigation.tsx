@@ -16,27 +16,27 @@ export function Navigation() {
             <NavigationMenuList className="bg-gradient-to-r from-foreground/5 via-foreground/10 to-foreground/5 backdrop-blur-md px-6 py-2 rounded-full border border-foreground/10">
               <NavigationMenuItem className="px-4">
                 <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
-                  <Home className="w-4 h-4" /> <span>Home</span>
+                  <Home className="w-4 h-4" /> <span>Top</span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem className="px-4">
                 <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
-                  <User className="w-4 h-4" /> <span>About</span>
+                  <User className="w-4 h-4" /> <span>Benefits</span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem className="px-4">
                 <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
-                  <Briefcase className="w-4 h-4" /> <span>Work</span>
+                  <Briefcase className="w-4 h-4" /> <span>Investors</span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem className="px-4">
                 <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
-                  <BookOpen className="w-4 h-4" /> <span>Blog</span>
+                  <BookOpen className="w-4 h-4" /> <span>Testimonials</span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem className="px-4">
                 <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
-                  <Image className="w-4 h-4" /> <span>Gallery</span>
+                  <Image className="w-4 h-4" /> <span>Faq</span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
