@@ -2,15 +2,7 @@
 
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
-import type { FC, SVGProps } from "react";
-
-interface SocialLinkProps {
-  name: string;
-  href: string;
-  icon: FC<SVGProps<SVGSVGElement>>;
-  lightColor: string;
-  darkColor: string;
-}
+import type { SocialLinkProps } from "@/types";
 
 const socialLinks: SocialLinkProps[] = [
   {
