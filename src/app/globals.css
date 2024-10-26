@@ -3,6 +3,31 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+::selection {
+  background-color: rgb(4, 47, 46);
+  color: rgb(45, 212, 191);
+}
+
+/* firefox */
+::-moz-selection {
+  background-color: rgb(4, 47, 46);
+  color: rgb(45, 212, 191);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 0%;
@@ -64,25 +89,4 @@
     --input: 0 0% 14.9%;
     --ring: 0 0% 100%;
   }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground antialiased;
-    font-feature-settings: "rlig" 1, "calt" 1;
-  }
-}
-
-::selection {
-  background-color: rgb(4, 47, 46);
-  color: rgb(45, 212, 191);
-}
-
-/* firefox */
-::-moz-selection {
-  background-color: rgb(4, 47, 46);
-  color: rgb(45, 212, 191);
 }
