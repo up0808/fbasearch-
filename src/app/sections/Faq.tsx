@@ -62,7 +62,7 @@ export function FAQItem({ question, answer, category }: FAQItemProps) {
       <motion.div
         layout
         className="relative overflow-hidden rounded-xl border p-6 transition-all duration-300
-        bg-slate-800 border-slate-700 text-slate-100 hover:bg-slate-700/50"
+        dark:bg-slate-800 dark:border-slate-700 dark:text-slate-100 dark:hover:bg-slate-700/50"
       >
         <Badge
           variant="secondary"
@@ -96,7 +96,7 @@ export function FAQItem({ question, answer, category }: FAQItemProps) {
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              <p className="mt-4 ml-12 leading-relaxed text-slate-300">
+              <p className="mt-4 ml-12 leading-relaxed dark:text-slate-300">
                 {answer}
               </p>
             </motion.div>
