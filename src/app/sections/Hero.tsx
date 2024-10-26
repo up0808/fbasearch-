@@ -2,10 +2,14 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import type { AnimatedProps } from "@/types/motion";
 
-export function Hero() {
+export function Hero({ id }: AnimatedProps) {
   return (
-    <div className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+    <section
+      id={id}
+      className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden"
+    >
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-1/4 -left-1/4 w-[1000px] h-[1000px] bg-gradient-to-r from-blue-500/30 via-cyan-500/30 to-emerald-500/30 dark:from-blue-500/20 dark:via-cyan-500/20 dark:to-emerald-500/20 rounded-full blur-3xl animate-slow-spin"></div>
         <div className="absolute -bottom-1/4 -right-1/4 w-[1000px] h-[1000px] bg-gradient-to-l from-emerald-500/30 via-blue-500/30 to-cyan-500/30 dark:from-emerald-500/20 dark:via-blue-500/20 dark:to-cyan-500/20 rounded-full blur-3xl animate-slow-spin-reverse"></div>
@@ -79,6 +83,6 @@ export function Hero() {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
