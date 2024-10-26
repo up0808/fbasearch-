@@ -3,14 +3,8 @@
 import Image from "next/image";
 import { Quote, Star } from "lucide-react";
 import { motion } from "framer-motion";
-
-interface TestimonialProps {
-  content: string;
-  author: string;
-  role: string;
-  company: string;
-  image: string;
-}
+import type { AnimatedProps } from "@/types/motion";
+import type { TestimonialProps } from "@/types";
 
 const testimonials: TestimonialProps[] = [
   {
@@ -85,7 +79,7 @@ function TestimonialCard({
   );
 }
 
-export function Testimonials() {
+export function Testimonials({ id }: AnimatedProps) {
   return (
     <motion.section
       className="py-20"
@@ -93,7 +87,7 @@ export function Testimonials() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="container mx-auto px-4">
+      <div id={id} className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="flex items-center justify-center w-12 h-12 rounded-full bg-cyan-100 dark:bg-cyan-800/30 mx-auto mb-4">
             <Star className="w-6 h-6 text-cyan-600 dark:text-cyan-400" />
