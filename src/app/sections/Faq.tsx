@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, ChevronDown, ChevronUp } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import type { AnimatedProps } from "@/types/motion";
 import type { FAQItemProps } from "@/types";
+import type { AnimatedProps } from "@/types/motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { ChevronDown, ChevronUp, Sparkles } from "lucide-react";
+import { useState } from "react";
 
 const faqs: FAQItemProps[] = [
   {

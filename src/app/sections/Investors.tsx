@@ -1,13 +1,13 @@
 "use client";
 
+import DarkLogo from "@/assets/vercel-icon-dark.svg";
+import LightLogo from "@/assets/vercel-icon-light.svg";
+import type { Sponsor } from "@/types";
+import type { AnimatedProps } from "@/types/motion";
+import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import DarkLogo from "@/assets/vercel-icon-dark.svg";
-import LightLogo from "@/assets/vercel-icon-light.svg";
-import type { AnimatedProps } from "@/types/motion";
-import type { Sponsor } from "@/types";
 
 const sponsors: Sponsor[] = [
   { name: "Vercel" },

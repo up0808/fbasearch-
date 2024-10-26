@@ -1,8 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import type { AnimatedProps } from "@/types/motion";
+import { motion } from "framer-motion";
 
 export function Hero({ id }: AnimatedProps) {
   return (

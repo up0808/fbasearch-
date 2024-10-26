@@ -4,7 +4,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { Home, User, Briefcase, BookOpen, Image } from "lucide-react";
+import { BookOpen, Briefcase, Home, Image, User } from "lucide-react";
 import { ModeToggle } from "./ModeToggle";
 
 export function Navigation() {

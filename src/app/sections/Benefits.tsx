@@ -1,9 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Code, Palette, Smartphone, Globe, Zap } from "lucide-react";
-import type { AnimatedProps } from "@/types/motion";
 import type { BenefitProps } from "@/types";
+import type { AnimatedProps } from "@/types/motion";
+import { motion } from "framer-motion";
+import { Code, Globe, Palette, Smartphone, Zap } from "lucide-react";
 
 const benefits: BenefitProps[] = [
   {
