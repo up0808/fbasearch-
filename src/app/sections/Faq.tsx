@@ -4,12 +4,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, ChevronDown, ChevronUp } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-
-interface FAQItemProps {
-  question: string;
-  answer: string;
-  category: string;
-}
+import type { AnimatedProps } from "@/types/motion";
+import type { FAQItemProps } from "@/types";
 
 const faqs: FAQItemProps[] = [
   {
@@ -107,7 +103,7 @@ export function FAQItem({ question, answer, category }: FAQItemProps) {
   );
 }
 
-export function FAQ() {
+export function FAQ({ id }: AnimatedProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
   const filteredFaqs =
@@ -116,7 +112,7 @@ export function FAQ() {
       : faqs.filter((faq) => faq.category === selectedCategory);
 
   return (
-    <motion.section className="relative py-20 overflow-hidden">
+    <section id={id} className="relative py-20 overflow-hidden">
       <div className="absolute inset-0 ">
         <div className="absolute inset-0 opacity-10 dark:opacity-20" />
       </div>
@@ -203,6 +199,6 @@ export function FAQ() {
           </AnimatePresence>
         </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 }
