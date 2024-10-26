@@ -15,27 +15,42 @@ export function Navigation() {
           <NavigationMenu className="hidden md:block">
             <NavigationMenuList className="bg-gradient-to-r from-foreground/5 via-foreground/10 to-foreground/5 backdrop-blur-md px-6 py-2 rounded-full border border-foreground/10">
               <NavigationMenuItem className="px-4">
-                <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
+                <NavigationMenuLink
+                  href="#top"
+                  className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors"
+                >
                   <Home className="w-4 h-4" /> <span>Top</span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem className="px-4">
-                <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
+                <NavigationMenuLink
+                  href="#benefits"
+                  className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors"
+                >
                   <User className="w-4 h-4" /> <span>Benefits</span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem className="px-4">
-                <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
+                <NavigationMenuLink
+                  href="#investors"
+                  className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors"
+                >
                   <Briefcase className="w-4 h-4" /> <span>Investors</span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem className="px-4">
-                <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
+                <NavigationMenuLink
+                  href="#testimonials"
+                  className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors"
+                >
                   <BookOpen className="w-4 h-4" /> <span>Testimonials</span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem className="px-4">
-                <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
+                <NavigationMenuLink
+                  href="#faq"
+                  className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors"
+                >
                   <Image className="w-4 h-4" /> <span>Faq</span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -45,27 +60,42 @@ export function Navigation() {
           <NavigationMenu className="md:hidden flex items-center justify-center bg-gradient-to-r from-foreground/5 via-foreground/10 to-foreground/5 backdrop-blur-md px-6 py-2 rounded-full border border-foreground/10">
             <NavigationMenuList className="flex items-center gap-4">
               <NavigationMenuItem>
-                <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
+                <NavigationMenuLink
+                  href="#top"
+                  className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors"
+                >
                   <Home className="w-6 h-6" />
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
+                <NavigationMenuLink
+                  href="#benefits"
+                  className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors"
+                >
                   <User className="w-6 h-6" />
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
+                <NavigationMenuLink
+                  href="#investors"
+                  className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors"
+                >
                   <Briefcase className="w-6 h-6" />
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
+                <NavigationMenuLink
+                  href="#testimonials"
+                  className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors"
+                >
                   <BookOpen className="w-6 h-6" />
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors">
+                <NavigationMenuLink
+                  href="#faq"
+                  className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors"
+                >
                   <Image className="w-6 h-6" />
                 </NavigationMenuLink>
               </NavigationMenuItem>
