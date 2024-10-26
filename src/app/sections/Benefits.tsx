@@ -101,7 +101,11 @@ export function Benefits() {
             transition={{ duration: 0.5 }}
             className="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4"
           >
-            Lorem, ipsum dolor.
+            Lorem
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-pink-600 dark:from-cyan-600 dark:to-cyan-700">
+              {" "}
+              ipsum dolor
+            </span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 10 }}

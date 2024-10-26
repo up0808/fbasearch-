@@ -99,7 +99,10 @@ export function Testimonials() {
             <Star className="w-6 h-6 text-cyan-600 dark:text-cyan-400" />
           </div>
           <h2 className="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
-            Success Stories
+            Success{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-pink-600 dark:from-cyan-600 dark:to-cyan-700">
+              Stories
+            </span>
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400">
             Don&apos;t just take my word for it - hear from the clients

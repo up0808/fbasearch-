@@ -73,8 +73,8 @@ export function Footer() {
           <motion.div className="text-center mb-12" variants={itemVariants}>
             <div className="inline-block mb-6"></div>
             <h2 className="text-4xl font-bold mb-4 dark:text-white text-gray-900">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-cyan-600 dark:from-cyan-200 dark:to-cyan-600">
-                Get in Touch
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-pink-600 dark:from-cyan-600 dark:to-cyan-700">
+                Get in touch
               </span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-lg">
