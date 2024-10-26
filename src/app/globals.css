@@ -75,3 +75,14 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+::selection {
+  background-color: rgb(4, 47, 46);
+  color: rgb(45, 212, 191);
+}
+
+/* firefox */
+::-moz-selection {
+  background-color: rgb(4, 47, 46);
+  color: rgb(45, 212, 191);
+}
