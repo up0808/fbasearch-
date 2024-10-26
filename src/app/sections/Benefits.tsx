@@ -2,14 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Code, Palette, Smartphone, Globe, Zap } from "lucide-react";
-import React from "react";
-
-interface BenefitProps {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  className?: string;
-}
+import type { AnimatedProps } from "@/types/motion";
+import type { BenefitProps } from "@/types";
 
 const benefits: BenefitProps[] = [
   {
@@ -82,9 +76,9 @@ function BenefitCard({ icon, title, description, className }: BenefitProps) {
   );
 }
 
-export function Benefits() {
+export function Benefits({ id }: AnimatedProps) {
   return (
-    <section className="py-20">
+    <section id={id} className="py-20">
       <div className="container mx-auto px-4">
         <motion.div
           className="flex items-center justify-center w-12 h-12 rounded-full bg-purple-100 dark:bg-cyan-800/30 mx-auto mb-4"
