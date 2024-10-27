@@ -51,6 +51,7 @@ export function Navigation() {
                   href="#faq"
                   className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors"
                 >
+                  {/* eslint-disable-next-line jsx-a11y/alt-text */}
                   <Image className="w-4 h-4" /> <span>Faq</span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -96,6 +97,7 @@ export function Navigation() {
                   href="#faq"
                   className="text-foreground/80 hover:text-foreground flex items-center gap-2 transition-colors"
                 >
+                  {/* eslint-disable-next-line jsx-a11y/alt-text */}
                   <Image className="w-6 h-6" />
                 </NavigationMenuLink>
               </NavigationMenuItem>
