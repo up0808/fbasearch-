@@ -2,13 +2,17 @@
 
 A modern, fast, and user-friendly landing page built with cutting-edge frontend technologies. Perfect for developers who want to kickstart their projects with a solid foundation.
 
-![Project Banner](https://via.placeholder.com/800x400?text=Awesome+Project+Banner)
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <img src="https://github.com/user-attachments/assets/c10a943f-efa8-4024-b0bb-5eca2402f52e" alt="Node.js" width="400">
+  <img src="https://github.com/user-attachments/assets/c79c7102-3968-4e04-9221-22560e0cabab" alt="JavaScript" width="400">
+</div>
 
 ## 🌐 Live Demo
 
 Check out the live demo: [View Demo](https://nextjs-shadcn-landing.vercel.app)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://nextjs-shadcn-landing.vercel.app)
+
 
 ## ✨ Features
 
