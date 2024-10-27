@@ -6,9 +6,9 @@ A modern, fast, and user-friendly landing page built with cutting-edge frontend 
 
 ## 🌐 Live Demo
 
-Check out the live demo: [View Demo](https://awesome-project.vercel.app)
+Check out the live demo: [View Demo](https://nextjs-shadcn-landing.vercel.app)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://awesome-project.vercel.app)
+[![Deploy with Vercel](https://vercel.com/button)](https://nextjs-shadcn-landing.vercel.app)
 
 ## ✨ Features
 
