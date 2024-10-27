@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Shadcn/ui landing 
 
-## Getting Started
+A modern, fast, and user-friendly landing page built with cutting-edge frontend technologies. Perfect for developers who want to kickstart their projects with a solid foundation.
 
-First, run the development server:
+![Project Banner](https://via.placeholder.com/800x400?text=Awesome+Project+Banner)
 
+## 🌐 Live Demo
+
+Check out the live demo: [View Demo](https://awesome-project.vercel.app)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://awesome-project.vercel.app)
+
+## ✨ Features
+
+- 📱 **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
+- 🎨 **Modern UI/UX** - Clean and intuitive interface with smooth animations
+- ⚡ **Lightning Fast** - Optimized for speed with Next.js
+- 🎯 **Type-Safe** - Built with TypeScript for better development experience
+- 🎨 **Beautiful Components** - Pre-built components from shadcn/ui
+
+## 🛠️ Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/anibalalpizar/nextjs-shadcn-landing.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+cd nextjs-shadcn-landing
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Start the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+Build for production:
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 💻 Code Examples
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Component Usage
+```tsx
+import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+function HeroSection() {
+  return (
+    <Card className="p-6">
+      <h1 className="text-3xl font-bold">Welcome to Our Landing Page</h1>
+      <p className="mt-2 text-gray-600">Start building something amazing!</p>
+      <Button className="mt-4">Get Started</Button>
+    </Card>
+  )
+}
+```
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Our landing page is built with modern frontend technologies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/) - React framework for production
+- [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) - Utility-first CSS framework
+- [![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=react&logoColor=white)](https://ui.shadcn.com/) - Re-usable components
+
+## 📊 Project Structure
+
+```
+.
+├── src/
+│   ├── app/
+│   │   ├── fonts/           # Font configurations
+│   │   ├── sections/        # Page sections components
+│   │   │   ├── Faq.tsx
+│   │   │   └── Testimonials.tsx
+│   │   ├── layout.tsx       # Root layout
+│   ├── assets/              # Static assets
+│   ├── components/
+│   │   ├── ui/             # shadcn/ui components
+│   │   │   └── dropdown-menu.tsx
+│   │   └── theme-provider.tsx
+│   ├── lib/               # Utility functions
+│   └── types/             # TypeScript type definitions
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+⭐️ If you found this project helpful, please give it a star!
