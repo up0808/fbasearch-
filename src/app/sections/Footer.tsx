@@ -7,21 +7,21 @@ import { ExternalLink, Github, Linkedin, Mail } from "lucide-react";
 const socialLinks: SocialLinkProps[] = [
   {
     name: "Email",
-    href: "mailto:anibal.alpizar14@gmail.com",
+    href: "mailto:yadavishant495@gmail.com",
     icon: Mail,
     lightColor: "hover:text-red-600",
     darkColor: "dark:hover:text-red-400",
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/anibalalpizar",
+    href: "https://www.linkedin.com/in/ishant-yadav-335716308",
     icon: Linkedin,
     lightColor: "hover:text-blue-600",
     darkColor: "dark:hover:text-blue-400",
   },
   {
     name: "GitHub",
-    href: "https://github.com/anibalalpizar",
+    href: "https://github.com/YadavIshant0808",
     icon: Github,
     lightColor: "hover:text-gray-800",
     darkColor: "dark:hover:text-gray-200",
@@ -105,9 +105,8 @@ export function Footer() {
             <p className="text-gray-600 dark:text-gray-400 text-sm">
               &copy; {new Date().getFullYear()}{" "}
               <span className="font-medium text-gray-800 dark:text-gray-200">
-                Aníbal Alpízar
+                FBA Dev Ishant Solutions
               </span>
-              . For free use.
             </p>
           </motion.div>
         </div>
