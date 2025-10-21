@@ -32,4 +32,5 @@ export interface TestimonialProps {
   role: string;
   company: string;
   image: string;
+  rating: number;
 }
