@@ -212,7 +212,7 @@ export function Testimonials({ id }: AnimatedProps) {
             Ready to transform your search experience?
           </h3>
           <p className="text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-            Start using FbaDevAiSearch today and discover how AI-powered intelligent search can save you time and improve your research quality.
+            Start using FBA Intelligent Search today and discover how AI-powered intelligent search can save you time and improve your research quality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.button
