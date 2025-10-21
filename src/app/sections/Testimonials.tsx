@@ -13,7 +13,7 @@ const testimonials: TestimonialProps[] = [
     author: "Dr. Sarah Chen",
     role: "Research Director",
     company: "BioTech Innovations",
-    image: "https://i.pinimg.com/280x280_RS/33/f2/3b/33f23bebdb419bbda9e9721c31812654.jpg",
+    image: "images/drsaras.jpg",
     rating: 5,
   },
   {
@@ -22,7 +22,7 @@ const testimonials: TestimonialProps[] = [
     author: "Michael Rodriguez",
     role: "Lead Developer",
     company: "DevFlow Solutions",
-    image: "https://wallpapers.com/images/high/headshot-of-young-american-actress-michelle-rodriguez-fwr13kw6vha5hwsz.webp",
+    image: "images/michelle.webp",
     rating: 5,
   },
   {
@@ -31,8 +31,7 @@ const testimonials: TestimonialProps[] = [
     author: "Emily Davis",
     role: "Content Strategy Lead",
     company: "Marketing Masters",
-    image: "https://www.trade.gov/sites/default/files/styles/bio_card/public/2025-07/Emily%20Davis.jpg?itok=yKZEohYx",
-    rating: 5,
+    image: "images/emilydavis",
   },
   {
     content:
@@ -40,7 +39,7 @@ const testimonials: TestimonialProps[] = [
     author: "James Wilson",
     role: "Customer Success Manager",
     company: "SupportTech Pro",
-    image: "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fuploaded-files%2Fjames-wilson-19102768-53bb-4b17-9b50-e4ce1369a05a.png?height=200&quality=highest&source=next-stream-page&width=200&redirect-from-v2=true",
+    image: "images/jameswilson.png",
     rating: 5,
   },
   {
@@ -49,7 +48,7 @@ const testimonials: TestimonialProps[] = [
     author: "Prof. Aisha Patel",
     role: "Associate Professor",
     company: "Tech University",
-    image: "https://www.americanmanufacturing.org/wp-content/uploads/2022/06/ayesha-300x242.jpg",
+    image: "images/ayesha.jpg",
     rating: 5,
   },
   {
@@ -58,7 +57,7 @@ const testimonials: TestimonialProps[] = [
     author: "David Kim",
     role: "Market Research Analyst",
     company: "InsightVentures",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlXocYMzEzkZmUlKQjX_8QlaczPiwE4HvrqXSr3SrMhA&s=10",
+    image: "images/david.jpg",
     rating: 5,
   },
 ];
