@@ -5,6 +5,7 @@ export interface BenefitProps {
   title: string;
   description: string;
   className?: string;
+  index?: number;
 }
 
 export interface FAQItemProps {
