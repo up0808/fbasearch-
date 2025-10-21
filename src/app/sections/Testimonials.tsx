@@ -32,6 +32,7 @@ const testimonials: TestimonialProps[] = [
     role: "Content Strategy Lead",
     company: "Marketing Masters",
     image: "images/emilydavis",
+    rating: 5
   },
   {
     content:
