@@ -31,7 +31,7 @@ const testimonials: TestimonialProps[] = [
     author: "Emily Davis",
     role: "Content Strategy Lead",
     company: "Marketing Masters",
-    image: "images/emilydavis",
+    image: "images/emilydavis.jpg",
     rating: 5
   },
   {
