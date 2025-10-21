@@ -10,15 +10,15 @@ import { useState } from "react";
 const faqs: FAQItemProps[] = [
   {
     category: "General",
-    question: "What is FbaDevAiSearch?",
+    question: "What is FBA Intelligent Search?",
     answer:
-      "FbaDevAiSearch is an intelligent search platform powered by Google's Gemini AI and real-time web search. It provides comprehensive, contextualized answers by analyzing multiple sources and delivering instant summaries with source citations. Think of it as having a research assistant that understands your questions and finds the most relevant information across the web.",
+      "FBA Intelligent Search is an intelligent search platform powered by Google's Gemini AI and real-time web search. It provides comprehensive, contextualized answers by analyzing multiple sources and delivering instant summaries with source citations. Think of it as having a research assistant that understands your questions and finds the most relevant information across the web.",
   },
   {
     category: "General",
-    question: "How does FbaDevAiSearch differ from regular search engines?",
+    question: "How does FBA Intelligent Search differ from regular search engines?",
     answer:
-      "Unlike traditional search engines that show a list of links, FbaDevAiSearch uses AI to understand your question, search multiple sources, synthesize the information, and provide a comprehensive answer with citations. You can also ask follow-up questions in a natural conversation, making research more intuitive and efficient.",
+      "Unlike traditional search engines that show a list of links, FBA Intelligent Search uses AI to understand your question, search multiple sources, synthesize the information, and provide a comprehensive answer with citations. You can also ask follow-up questions in a natural conversation, making research more intuitive and efficient.",
   },
   {
     category: "Features",
@@ -34,9 +34,9 @@ const faqs: FAQItemProps[] = [
   },
   {
     category: "Technical",
-    question: "What AI technology powers FbaDevAiSearch?",
+    question: "What AI technology powers FBA Intelligent Search?",
     answer:
-      "FbaDevAiSearch is powered by Google's Gemini 2.5 Flash AI model for natural language understanding and generation. We integrate Tavily Search API for real-time web research, and deploy on Google Cloud Run for enterprise-grade reliability and performance. The entire system is built with LangGraph for advanced conversational AI workflows.",
+      "FBA Intelligent Search is powered by Google's Gemini 2.5 Flash AI model for natural language understanding and generation. We integrate Tavily Search API for real-time web research, and deploy on Google Cloud Run for enterprise-grade reliability and performance. The entire system is built with LangGraph for advanced conversational AI workflows.",
   },
   {
     category: "Technical",
@@ -64,9 +64,9 @@ const faqs: FAQItemProps[] = [
   },
   {
     category: "Integration",
-    question: "Can I integrate FbaDevAiSearch into my own application?",
+    question: "Can I integrate FBA Intelligent Search into my own application?",
     answer:
-      "Yes! FbaDevAiSearch provides a REST API with server-sent events (SSE) for streaming responses. You can integrate it into web apps, mobile apps, or any platform that supports HTTP requests. API documentation includes authentication, endpoints, and example code in multiple languages. Contact us for API access and integration support.",
+      "Yes! FBA Intelligent Search provides a REST API with server-sent events (SSE) for streaming responses. You can integrate it into web apps, mobile apps, or any platform that supports HTTP requests. API documentation includes authentication, endpoints, and example code in multiple languages. Contact us for API access and integration support.",
   },
   {
     category: "Support",
@@ -78,7 +78,7 @@ const faqs: FAQItemProps[] = [
     category: "Support",
     question: "Do you offer customer support or documentation?",
     answer:
-      "Yes! We provide comprehensive documentation including getting started guides, API reference, integration examples, and troubleshooting tips. For technical support, you can reach us through our contact form or email. We also maintain a knowledge base with tutorials and best practices for getting the most out of FbaDevAiSearch.",
+      "Yes! We provide comprehensive documentation including getting started guides, API reference, integration examples, and troubleshooting tips. For technical support, you can reach us through our contact form or email. We also maintain a knowledge base with tutorials and best practices for getting the most out of FBA Intelligent Search.",
   },
 ];
 
@@ -192,7 +192,7 @@ export function FAQ({ id }: AnimatedProps) {
               Still have questions?
             </h3>
             <p className="text-slate-600 dark:text-slate-400 mb-6">
-              Can't find the answer you're looking for? Our support team is here to help you get the most out of FbaDevAiSearch.
+              Can't find the answer you're looking for? Our support team is here to help you get the most out of FBA Intelligent Search.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button
