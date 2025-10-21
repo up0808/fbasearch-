@@ -9,20 +9,20 @@ import { Star, Quote } from "lucide-react";
 const testimonials: TestimonialProps[] = [
   {
     content:
-      "FbaDevAiSearch has completely transformed how our research team works. Instead of spending hours sorting through search results, we get instant, comprehensive answers with verified sources. The conversational interface makes it feel like having an expert researcher on our team 24/7.",
+      "FBA Intelligent Search has completely transformed how our research team works. Instead of spending hours sorting through search results, we get instant, comprehensive answers with verified sources. The conversational interface makes it feel like having an expert researcher on our team 24/7.",
     author: "Dr. Sarah Chen",
     role: "Research Director",
     company: "BioTech Innovations",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
+    image: "https://i.pinimg.com/280x280_RS/33/f2/3b/33f23bebdb419bbda9e9721c31812654.jpg",
     rating: 5,
   },
   {
     content:
-      "As a developer, I was skeptical about AI search tools, but FbaDevAiSearch proved me wrong. The API integration was seamless, the streaming responses are blazingly fast, and the source citations give us confidence in the accuracy. It's now essential to our product research workflow.",
+      "As a developer, I was skeptical about AI search tools, but FBA Intelligent Search proved me wrong. The API integration was seamless, the streaming responses are blazingly fast, and the source citations give us confidence in the accuracy. It's now essential to our product research workflow.",
     author: "Michael Rodriguez",
     role: "Lead Developer",
     company: "DevFlow Solutions",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Michael",
+    image: "https://wallpapers.com/images/high/headshot-of-young-american-actress-michelle-rodriguez-fwr13kw6vha5hwsz.webp",
     rating: 5,
   },
   {
@@ -31,34 +31,34 @@ const testimonials: TestimonialProps[] = [
     author: "Emily Davis",
     role: "Content Strategy Lead",
     company: "Marketing Masters",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emily",
+    image: "https://www.trade.gov/sites/default/files/styles/bio_card/public/2025-07/Emily%20Davis.jpg?itok=yKZEohYx",
     rating: 5,
   },
   {
     content:
-      "We integrated FbaDevAiSearch into our customer support system, and response quality improved dramatically. The AI understands complex technical questions and provides accurate answers with sources our team can verify. Customer satisfaction is up 40%!",
+      "We integrated FBA Intelligent Search into our customer support system, and response quality improved dramatically. The AI understands complex technical questions and provides accurate answers with sources our team can verify. Customer satisfaction is up 40%!",
     author: "James Wilson",
     role: "Customer Success Manager",
     company: "SupportTech Pro",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=James",
+    image: "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fuploaded-files%2Fjames-wilson-19102768-53bb-4b17-9b50-e4ce1369a05a.png?height=200&quality=highest&source=next-stream-page&width=200&redirect-from-v2=true",
     rating: 5,
   },
   {
     content:
-      "As an educator, I needed a tool that could help students research effectively while teaching them to verify sources. FbaDevAiSearch does exactly that - it provides comprehensive answers AND shows where the information comes from. Perfect for academic research!",
+      "As an educator, I needed a tool that could help students research effectively while teaching them to verify sources. FBA Intelligent Search does exactly that - it provides comprehensive answers AND shows where the information comes from. Perfect for academic research!",
     author: "Prof. Aisha Patel",
     role: "Associate Professor",
     company: "Tech University",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Aisha",
+    image: "https://www.americanmanufacturing.org/wp-content/uploads/2022/06/ayesha-300x242.jpg",
     rating: 5,
   },
   {
     content:
-      "The real-time web search combined with AI summarization is incredibly powerful for market research. We can track trends, compare data, and get insights faster than ever. FbaDevAiSearch has become indispensable for our competitive analysis.",
+      "The real-time web search combined with AI summarization is incredibly powerful for market research. We can track trends, compare data, and get insights faster than ever. FBA Intelligent Search has become indispensable for our competitive analysis.",
     author: "David Kim",
     role: "Market Research Analyst",
     company: "InsightVentures",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=David",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlXocYMzEzkZmUlKQjX_8QlaczPiwE4HvrqXSr3SrMhA&s=10",
     rating: 5,
   },
 ];
