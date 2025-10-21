@@ -44,7 +44,7 @@ export function Hero({ id }: AnimatedProps) {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-slate-100 dark:via-slate-200 dark:to-slate-100">
-              Intelligent Search
+              FBA Intelligent Search
             </span>
             <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 via-purple-600 to-blue-600 dark:from-cyan-400 dark:via-purple-400 dark:to-blue-400">
