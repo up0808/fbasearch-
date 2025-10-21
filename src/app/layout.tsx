@@ -17,8 +17,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Shadcn landing page",
-  description: "Landing page for free and open source software",
+  title: "FBA Intelligent Search",
+  description: "GenZ AI Powered Search Engine ",
 };
 
 export default function RootLayout({
