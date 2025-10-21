@@ -80,7 +80,7 @@ export function Benefits({ id }: AnimatedProps) {
           >
             Why Choose{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-purple-600 dark:from-cyan-400 dark:to-purple-400">
-              FbaDevAiSearch
+              FBA Intelligent Search
             </span>
           </motion.h2>
           <motion.p
