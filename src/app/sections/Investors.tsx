@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 interface Investor {
   name: string;
-  logo: (isDark: boolean) => JSX.Element;
+  logo: ({ isDark }: { isDark: boolean }) => JSX.Element;  // Change this line
 }
 
 // OpenAI Logo SVG
