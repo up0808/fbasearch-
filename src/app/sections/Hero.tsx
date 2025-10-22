@@ -124,7 +124,7 @@ export function Hero({ id }: AnimatedProps) {
               className="border-2 border-cyan-600 dark:border-cyan-400 text-cyan-600 dark:text-cyan-400 hover:bg-cyan-50 dark:hover:bg-cyan-950/30 px-8 py-6 text-lg rounded-full transition-all duration-300"
             >
               <a
-                href="https://github.com/up0808/FbaDevAiSearch"
+                href="https://github.com/YadavIshant0808"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
