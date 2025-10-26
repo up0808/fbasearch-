@@ -106,8 +106,8 @@ export function Hero({ id }: AnimatedProps) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button className="bg-gradient-to-r from-cyan-600 via-purple-600 to-blue-600 hover:from-cyan-700 hover:via-purple-700 hover:to-blue-700 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-              <Search className="w-5 h-5 mr-2" />
+            <Button href="https://chat.search.fbadevishant.qzz.io" className="bg-gradient-to-r from-cyan-600 via-purple-600 to-blue-600 hover:from-cyan-700 hover:via-purple-700 hover:to-blue-700 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+              <Search className="w-5 h-5 mr-2" />.    
               Start Searching Now
             </Button>
           </motion.div>
@@ -156,7 +156,7 @@ export function Hero({ id }: AnimatedProps) {
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 border-2 border-white dark:border-slate-800"></div>
           </div>
           <span className="text-sm text-slate-600 dark:text-slate-400">
-            <strong className="text-slate-900 dark:text-slate-100">10,000+</strong> researchers and professionals trust FbaDevAiSearch
+            <strong className="text-slate-900 dark:text-slate-100">10,000+</strong> researchers and professionals trust Fba Intelligent Search
           </span>
         </motion.div>
       </div>
