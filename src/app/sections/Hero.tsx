@@ -159,7 +159,7 @@ export function Hero({ id }: AnimatedProps) {
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 border-2 border-white dark:border-slate-800"></div>
           </div>
           <span className="text-sm text-slate-600 dark:text-slate-400">
-            <strong className="text-slate-900 dark:text-slate-100">10,000+</strong> researchers and professionals trust Fba Intelligent Search
+            <strong className="text-slate-900 dark:text-slate-100">10,000+</strong> researchers and professionals trust FBA Intelligent Search
           </span>
         </motion.div>
       </div>
